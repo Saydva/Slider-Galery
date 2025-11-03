@@ -27,8 +27,9 @@ body {
 #slide {
   aspect-ratio: 1/1;
   border-radius: 10px;
-  margin: 0 0.4em;
-  width: 32%;
+  margin: 0 0.5em;
+
+  width: 30%;
 }
 
 #slide:hover {
@@ -61,9 +62,27 @@ body {
   align-items: center;
 }
 
+@media (max-width: 1200px) {
+  #slide {
+    width: 31%;
+    margin: 0 0.35em;
+  }
+
+  #main-container {
+    padding: 0.7em;
+    border: 6px solid #1f4f5b;
+  }
+
+  #button {
+    width: 1.8rem;
+    height: 57%;
+    font-size: 0.95rem;
+  }
+}
+
 @media (max-width: 1024px) {
   #slide {
-    width: 40%;
+    width: 31%;
     margin: 0 0.3em;
   }
 
@@ -112,5 +131,19 @@ body {
     width: 88%;
     height: 50%;
     font-size: 0.8rem;
+  }
+
+  @media (max-width: 400) {
+    #main-container {
+      padding: 0.2em;
+      border: 3px solid #1f4f5b;
+    }
+  }
+
+  @media (max-width: 350) {
+    #main-container {
+      padding: 0.2em;
+      border: 1px solid #1f4f5b;
+    }
   }
 }

@@ -12,3 +12,22 @@ images.forEach((src) => {
   img.alt = '';
   container.appendChild(img);
 });
+
+function updateSlideSizes() {
+  const slides = document.querySelectorAll('#slide');
+  const screenWidth = window.innerWidth;
+
+  let number = 0;
+
+  if (screenWidth > 1024) {
+    number = 3;
+  } else if (screenWidth > 768) {
+    number = 2;
+  } else {
+    number = 1;
+  }
+
+  console.log(number);
+}
+
+window.addEventListener('resize', updateSlideSizes);
