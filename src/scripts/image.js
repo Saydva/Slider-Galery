@@ -29,8 +29,6 @@ function updateSlideSizes() {
     number = 1;
   }
 
-  console.log(number);
-
   container.innerHTML = '';
   for (let i = 0; i < number && i < images.length; i++) {
     const imgIndex = (startIndex + i) % images.length;
@@ -40,6 +38,11 @@ function updateSlideSizes() {
     img.alt = '';
     img.loading = 'lazy';
     img.classList.add('fade-in');
+    // Pridaj event na otvorenie modalu s týmto obrázkom
+    img.addEventListener('click', () => {
+      document.getElementById('modal-img').src = images[imgIndex];
+      modal.style.display = 'block';
+    });
     container.appendChild(img);
   }
 }
@@ -56,3 +59,16 @@ document.getElementById('prev-btn').addEventListener('click', () => {
 
 window.addEventListener('DOMContentLoaded', updateSlideSizes);
 window.addEventListener('resize', updateSlideSizes);
+
+const modal = document.getElementById('modal');
+const closeModalBtn = document.querySelector('.close-modal');
+
+closeModalBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+window.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+  }
+});
