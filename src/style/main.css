@@ -1,0 +1,13 @@
+@import url('./slider.css');
+@import url('./modal.css');
+@import url('./responsive.css');
+
+body {
+  padding: 1em;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.slider-wrapper {
+  margin-bottom: 3rem;
+}
