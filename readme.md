@@ -22,7 +22,7 @@ Projekt je napísaný v čistom HTML, CSS a JavaScript (ES6).
 1. **Klonuj repozitár:**
 
    ```bash
-   git clone https://github.com/tvoj-username/tvoj-repozitar.git
+   git clone https://github.com/Saydva/Slider-Galery.git
    ```
 
 2. **Otvoriť projekt v prehliadači:**
@@ -61,7 +61,7 @@ Projekt je napísaný v čistom HTML, CSS a JavaScript (ES6).
 ## Online verzia
 
 Projekt je dostupný na GitHub Pages:  
-[https://Saydva.github.io/Slider-Galery/](https://tvoj-username.github.io/tvoj-repozitar/)
+[https://Saydva.github.io/Slider-Galery/](https://Saydva.github.io/Slider-Galery/)
 
 ---
 

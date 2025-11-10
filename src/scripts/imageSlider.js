@@ -65,3 +65,37 @@ export default class ImageSlider {
     }
   }
 }
+
+const themePalettes = {
+  light: {
+    '--bg': '#F9F9F9',
+    '--primary': '#71C9CE',
+    '--secondary': '#FFD6EC',
+    '--text': '#222831',
+  },
+  dark: {
+    '--bg': '#222831',
+    '--primary': '#393E46',
+    '--secondary': '#00ADB5',
+    '--text': '#EEEEEE',
+  },
+  neutral: {
+    '--bg': '#F6F5F5',
+    '--primary': '#AEE1F9',
+    '--secondary': '#BBDED6',
+    '--text': '#232931',
+  },
+};
+
+document.querySelectorAll('.slider-wrapper').forEach((slider) => {
+  const themeBtns = slider.querySelectorAll('.theme-btn');
+  themeBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const theme = btn.dataset.theme;
+      const palette = themePalettes[theme];
+      Object.entries(palette).forEach(([key, value]) => {
+        slider.style.setProperty(key, value);
+      });
+    });
+  });
+});
