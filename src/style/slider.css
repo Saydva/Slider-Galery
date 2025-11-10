@@ -87,9 +87,11 @@
 
 .slider-wrapper {
   /* Téma farby */
+  padding: 1rem;
   background: var(--bg, #f9f9f9);
   color: var(--text, #222831);
   border-color: var(--primary, #1f4f5b);
+  border-radius: 15px;
   margin-bottom: 3rem;
 }
 
