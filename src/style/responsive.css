@@ -1,4 +1,4 @@
-@media (max-width: 2100px) {
+/* @media (max-width: 2100px) {
   .slide {
     width: 31%;
     margin: 0 0.35em;
@@ -124,7 +124,7 @@
   }
 }
 
-/* modal section  */
+/* modal section  */ /*
 
 @media (max-width: 500px) {
   .modal-content {
@@ -150,4 +150,4 @@
     width: 80vw;
     padding: 2em;
   }
-}
+} */

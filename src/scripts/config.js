@@ -25,6 +25,6 @@ export const galleries = {
     'public/cycles/kaur-kristjan-miUC0b1IVYU-unsplash.jpg',
     'public/cycles/santiago-pazos-bordon-Jj9dycup6HM-unsplash.jpg',
     'public/cycles/saurav-kundu-H8QttyFgroY-unsplash.jpg',
-    'public/cycles/howard-bouchevereau-BRDO4C-0h_s-unsplash.jpg',
+    'public/cycles/ting-tse-wang-0pqoAu5mW0s-unsplash.jpg',
   ],
 };

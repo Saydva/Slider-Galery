@@ -58,7 +58,7 @@ export default class ImageSlider {
 
       img.addEventListener('click', () => {
         this.modalImg.src = this.images[imgIndex];
-        this.modal.style.display = 'block';
+        this.modal.style.display = 'flex';
       });
 
       this.imgContainer.appendChild(img);

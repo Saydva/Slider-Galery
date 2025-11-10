@@ -13,7 +13,7 @@ export function initModal() {
   });
 
   window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.style.display === 'block') {
+    if (e.key === 'Escape' && modal.style.display === 'flex') {
       modal.style.display = 'none';
     }
   });
