@@ -1,5 +1,3 @@
-import AutoPlay from './autoplay.js';
-
 export default class ImageSlider {
   constructor(container, images) {
     this.container = container;
@@ -20,9 +18,6 @@ export default class ImageSlider {
     this.nextBtn.addEventListener('click', () => this.next());
     this.updateSlides();
     window.addEventListener('resize', () => this.updateSlides());
-
-    // Inicializuj autoplay (funguje len na dotykových zariadeniach)
-    this.autoPlay = new AutoPlay(this, 3000); // 3000ms = 3 sekundy
   }
 
   next() {
@@ -65,30 +60,3 @@ export default class ImageSlider {
     }
   }
 }
-
-const themePalettes = {
-  light: {
-    '--bg': '#FFFFFF', // čisto biela
-    '--primary': '#4FC3F7', // jasná modrá
-    '--secondary': '#FFB6B9', // pastelová ružová
-    '--text': '#222831', // tmavý text
-  },
-  dark: {
-    '--bg': '#181818', // takmer čierna
-    '--primary': '#00ADB5', // výrazná tyrkysová
-    '--secondary': '#393E46', // tmavá šedá
-    '--text': '#EEEEEE', // svetlý text
-  },
-  neutral: {
-    '--bg': '#FFF8E1', // jemná krémová
-    '--primary': '#FFD600', // výrazná žltá
-    '--secondary': '#FFAB91', // pastelová oranžová
-    '--text': '#5D4037', // hnedý text
-  },
-  default: {
-    '--bg': ' #cccccc5b',
-    '--primary': '#83bdcb',
-    '--secondary': '#98afc6',
-    '--text': '#222831',
-  },
-};

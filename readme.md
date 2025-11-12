@@ -14,6 +14,9 @@ Projekt je napísaný v čistom HTML, CSS a JavaScript (ES6).
 - Fade-in efekt pri zobrazení obrázkov
 - Prednačítanie obrázkov pre plynulý zážitok
 - Podpora lazy loadingu obrázkov
+- Farebné témy pre každý slider (prepínanie tém)
+- Slide bar s bodkami, ktoré menia farbu podľa témy
+- Každý slider má vlastný štýl slide baru
 
 ---
 
@@ -38,11 +41,24 @@ Projekt je napísaný v čistom HTML, CSS a JavaScript (ES6).
 ├── index.html
 ├── src/
 │   ├── style/
-│   │   └── main.css
+│   │   ├── main.css
+│   │   ├── slider.css
+│   │   ├── slide-bar.css
+│   │   └── css-variables.css
 │   └── scripts/
-│       └── main.js
+│       ├── main.js
+│       ├── config.js
+│       ├── slider1.js
+│       ├── slider2.js
+│       ├── slider3.js
+│       ├── slider-common.js
+│       ├── modal.js
+│       └── imageSlider.js
 ├── public/
-│   └── obrázky.jpg
+│   ├── foods/
+│   ├── bikes/
+│   └── cycles/
+└── readme.md
 ```
 
 ---
@@ -50,11 +66,13 @@ Projekt je napísaný v čistom HTML, CSS a JavaScript (ES6).
 ## Prispôsobenie
 
 - **Pridať nový slider:**  
-  Skopíruj blok `<div class="slider-wrapper" ...>` v `index.html` a uprav atribút `data-slider`.
+  Skopíruj blok `<div class="slider-wrapper ...">` v `index.html` a uprav atribúty a triedy podľa potreby.
 - **Pridať obrázky:**  
-  Pridaj cesty k obrázkom do poľa v `main.js`.
+  Pridaj cesty k obrázkom do príslušnej galérie v `src/scripts/config.js`.
 - **Upraviť štýl:**  
-  Zmeň CSS v `src/style/main.css` podľa vlastných preferencií.
+  Zmeň CSS v `src/style/slider.css`, `slide-bar.css` alebo pridaj vlastné témy v JS.
+- **Pridať/meniť témy:**  
+  Upraviť objekty tém v `slider1.js`, `slider2.js`, `slider3.js` (custom properties).
 
 ---
 
@@ -65,8 +83,8 @@ Projekt je dostupný na GitHub Pages:
 
 ---
 
-vytvor ktomu aj qr kod
+## QR kód
 
-Tu je QR kód pre tvoju online verziu na GitHub Pages:
+Pre rýchly prístup k online verzii:
 
 <img alt="QR kód" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;data=https://Saydva.github.io/Slider-Galery/">
