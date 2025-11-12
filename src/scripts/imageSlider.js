@@ -92,16 +92,3 @@ const themePalettes = {
     '--text': '#222831',
   },
 };
-
-document.querySelectorAll('.slider-wrapper').forEach((slider) => {
-  const themeBtns = slider.querySelectorAll('.theme-btn');
-  themeBtns.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const theme = btn.dataset.theme;
-      const palette = themePalettes[theme];
-      Object.entries(palette).forEach(([key, value]) => {
-        slider.style.setProperty(key, value);
-      });
-    });
-  });
-});

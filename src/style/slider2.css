@@ -1,0 +1,88 @@
+/* Druhý slider - wrapper */
+.slider2-wrapper {
+  background: var(--bg, linear-gradient(135deg, #fce38a 60%, #f38181 100%));
+  color: var(--text, #222831);
+  border: var(--border, 4px solid #f38181);
+  border-radius: 40px;
+  margin-bottom: 2rem;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 8px 40px rgba(243, 129, 129, 0.18);
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+/* Druhý slider - hlavný kontajner */
+.slider2-main-container {
+  background: var(--bg, #b2bec3);
+  color: var(--text, #222831);
+  border: var(--border, 4px solid #f38181);
+  border-radius: 30px;
+  padding: 1.5rem;
+  margin: 0.7rem 0;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+/* Druhý slider - tlačidlá */
+.slider2-button,
+.slider2-theme-buttons .theme-btn {
+  background: var(--btn-bg, #b2bec3);
+  color: var(--btn-color, #222831);
+  border-radius: 50px 10px 50px 10px;
+  border: 2px solid var(--secondary, #eaffd0);
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 16px rgba(243, 129, 129, 0.18);
+  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s,
+    box-shadow 0.2s;
+  outline: none;
+  letter-spacing: 1px;
+  margin: 0.4rem;
+  padding: 0.6rem 1.2rem;
+}
+
+.slider2-button {
+  background-color: var(--btn-bg, #f38181);
+  color: var(--btn-color, #fff);
+  border-radius: 50px;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+.slider2-theme-buttons .theme-btn {
+  background-color: var(--btn-bg, #f38181);
+  color: var(--btn-color, #fff);
+  border-radius: 20px;
+  padding: 0.6rem 1.2rem;
+}
+
+.slider2-button:hover,
+.slider2-theme-buttons .theme-btn:hover {
+  background: var(--btn-hover-bg, #dfe6e9);
+  color: var(--btn-hover-color, #222831);
+  border-color: var(--primary, #b2bec3);
+  transform: scale(1.18) rotate(-3deg);
+  box-shadow: 0 8px 24px rgba(243, 129, 129, 0.25);
+}
+
+/* Druhý slider - obrázky */
+.slider2-img-container .slide {
+  border-radius: 24px;
+  margin: 0 0.35em;
+  box-shadow: 0 2px 12px rgba(243, 129, 129, 0.12);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Animácia obrázkov */
+.slider2-img-container .slide.fade-in {
+  opacity: 0;
+  transform: scale(0.93);
+  animation: slider2FadeIn 0.7s forwards;
+}
+
+@keyframes slider2FadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

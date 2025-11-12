@@ -1,125 +1,72 @@
-@media (max-width: 2100px) {
-  .slide {
-    width: 31%;
-    margin: 0 0.35em;
-  }
+/* Responsive.css */
 
-  .main-container {
-    padding: 0.7em;
-    border: 6px solid #1f4f5b;
-  }
-
-  .button {
-    width: 1.8rem;
-    height: 57%;
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 1600px) {
-  .slide {
-    width: 28%;
-    margin: 0 0.3em;
-  }
-
-  .main-container {
-    padding: 0.7em;
-    border: 6px solid #1f4f5b;
-  }
-
-  .button {
-    width: 1.8rem;
-    height: 57%;
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 1200px) {
-  .slide {
-    width: 31%;
-    margin: 0 0.3em;
-  }
-
-  .main-container {
-    padding: 0.5em;
-    border: 5px solid #1f4f5b;
-  }
-
-  .button {
-    width: 1.5rem;
-    height: 55%;
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 1024px) {
-  .slide {
-    width: 31%;
-    margin: 0 0.3em;
-  }
-
-  .main-container {
-    padding: 0.5em;
-    border: 5px solid #1f4f5b;
-  }
-
-  .button {
-    width: 1.5rem;
-    height: 55%;
-    font-size: 0.9rem;
-  }
-}
-
+/* Stredné zariadenia (napr. tablety) */
 @media (max-width: 900px) {
+  /* 1. Všetky hlavné kontajnery sa prispôsobia šírke */
+  .main-container {
+    /* Povolenie pretečenia, ale odstránenie fixnej šírky pre lepšiu flexibilitu */
+    max-width: 95vw;
+  }
+
+  /* 2. Upraví sa rozloženie tlačidiel pre témy (budú pod sebou, ak sa nevojdú) */
+  .theme-buttons {
+    flex-wrap: wrap; /* Tlačidlá sa môžu zalomiť na viac riadkov */
+    gap: 0.5rem; /* Menšia medzera medzi tlačidlami */
+  }
+
+  /* 3. Menšie snímky (ako už máte) */
   .slide {
     width: 32%;
     margin: 0 0.25em;
   }
-
-  .main-container {
-    padding: 0.4em;
-    border: 4px solid #1f4f5b;
-  }
-
-  .button {
-    width: 1.2rem;
-    height: 52%;
-    font-size: 0.85rem;
-  }
 }
 
+/* Malé zariadenia (napr. mobily na šírku) */
 @media (max-width: 600px) {
+  /* 1. Wrapper zväčší padding, aby obsah nebol nalepený na kraji obrazovky */
+  .slider-wrapper {
+    padding: 1rem 0.5rem;
+  }
+
+  .theme-btn {
+    padding: 0.5rem 1rem; /* Menšie paddingy pre tlačidlá */
+    font-size: 1rem; /* Menší text v tlačidlách */
+  }
+
+  /* 5. Ešte menšie snímky */
   .slide {
-    width: 40%;
+    width: 45%; /* Zobrazí 2 snímky naraz */
     margin: 0 0.2em;
   }
-
-  .main-container {
-    padding: 0.3em;
-    border: 3px solid #1f4f5b;
-  }
-
-  .button {
-    width: 88%;
-    height: 50%;
-    font-size: 0.8rem;
-  }
 }
 
+/* Veľmi malé zariadenia (napr. mobily na výšku) */
 @media (max-width: 400px) {
   .slide {
-    width: 70%;
-    margin: 0 0.15em;
+    width: 85%; /* Zobrazí 1 snímku naraz, ktorá je širšia */
+    margin: 0 0.5em;
   }
 
   .main-container {
-    padding: 0.2em;
-    border: 2px solid #1f4f5b;
+    padding: 0.5rem;
+  }
+
+  .button-container {
+    width: 10%; /* Menšia medzera medzi navigačnými tlačidlami */
+    font-size: 0.3rem;
   }
 
   .button {
-    width: 70%;
-    height: 45%;
-    font-size: 0.75rem;
+    padding: 0.5rem !important;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    font-size: 0.5rem !important;
+  }
+
+  .theme-buttons .theme-btn {
+    /* Menšie paddingy pre theme tlačidlá */
+    padding: 0.4rem 0.4rem;
+
+    font-size: 0.8rem;
   }
 }

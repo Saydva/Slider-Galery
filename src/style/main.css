@@ -1,6 +1,10 @@
 @import url('./slider.css');
 @import url('./modal.css');
 @import url('./responsive.css');
+@import url('./slider1.css');
+@import url('./slider2.css');
+@import url('./slider3.css');
+@import url('./slide-bar.css');
 
 body {
   padding: 1em;

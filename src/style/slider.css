@@ -4,14 +4,15 @@
   display: flex;
   justify-content: center;
   padding: 1em;
-  border: 7px solid var(--primary, #1f4f5b);
+  background: var(--bg, #f9f9f9);
+  color: var(--text, #222831);
+  border: var(--border, 7px solid #ccc);
   border-radius: 25px;
   width: fit-content;
   max-width: 90vw;
   overflow-x: auto;
   margin: 0 auto;
-  background: var(--bg, #f9f9f9);
-  color: var(--text, #222831);
+  transition: background 0.3s, color 0.3s, border 0.3s;
 }
 
 .img-container {
@@ -27,10 +28,9 @@
   border-radius: 10px;
   margin: 0 0.5em;
   width: 22%;
-  /* border: 2px solid var(--secondary, #ffd6ec); */
-  background: var(--bg, #f9f9f9);
   display: block;
   height: auto;
+  background: var(--bg, #f9f9f9);
 }
 
 .slide:hover {
@@ -40,8 +40,6 @@
 }
 
 .button {
-  background-color: var(--primary, rgba(31, 79, 91, 0.8));
-  color: var(--text, #222831);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,24 +56,26 @@
   gap: 1rem;
   margin-bottom: 1rem;
   padding: 0.3rem;
+  flex-wrap: wrap;
 }
 
+.theme-btn,
 .button-theme {
-  padding: 0.5rem;
-  background-color: var(--primary, rgba(31, 79, 91, 0.8));
-  color: var(--text, #222831);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
+  background: var(--btn-bg, #4fc3f7);
+  color: var(--btn-color, #fff);
   border-radius: 5px;
-  transition: background 0.2s, color 0.2s;
+  padding: 0.5rem 1rem;
+  margin: 0 0.2rem;
+  border: none;
+  box-shadow: 0 2px 8px rgba(79, 195, 247, 0.2);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
 }
 
-.button:hover {
-  background-color: var(--secondary, #ffd6ec);
-  color: var(--text, #222831);
-  cursor: pointer;
+.theme-btn:hover,
+.button-theme:hover {
+  background: var(--btn-hover-bg, #ffb6b9);
+  color: var(--btn-hover-color, #222831);
+  transform: scale(1.1);
 }
 
 .button-container {
@@ -94,9 +94,9 @@
   padding: 1rem;
   background: var(--bg, #f9f9f9);
   color: var(--text, #222831);
-  border-color: var(--primary, #1f4f5b);
   border-radius: 15px;
   margin-bottom: 3rem;
+  transition: background 0.3s, color 0.3s;
 }
 
 @keyframes fadeIn {

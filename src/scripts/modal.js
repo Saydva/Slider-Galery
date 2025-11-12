@@ -1,12 +1,20 @@
 export function initModal() {
   const modal = document.getElementById('modal');
-  const closeModalBtn = document.querySelector('.close-modal');
+  const modalImg = document.getElementById('modal-img');
+  const closeModal = document.querySelector('.close-modal');
 
-  closeModalBtn.addEventListener('click', () => {
+  document.querySelectorAll('.img-container img').forEach((img) => {
+    img.addEventListener('click', () => {
+      modal.style.display = 'flex';
+      modalImg.src = img.src;
+    });
+  });
+
+  closeModal.addEventListener('click', () => {
     modal.style.display = 'none';
   });
 
-  window.addEventListener('click', (e) => {
+  modal.addEventListener('click', (e) => {
     if (e.target === modal) {
       modal.style.display = 'none';
     }
