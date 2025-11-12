@@ -68,22 +68,28 @@ export default class ImageSlider {
 
 const themePalettes = {
   light: {
-    '--bg': '#F9F9F9',
-    '--primary': '#71C9CE',
-    '--secondary': '#FFD6EC',
-    '--text': '#222831',
+    '--bg': '#FFFFFF', // čisto biela
+    '--primary': '#4FC3F7', // jasná modrá
+    '--secondary': '#FFB6B9', // pastelová ružová
+    '--text': '#222831', // tmavý text
   },
   dark: {
-    '--bg': '#222831',
-    '--primary': '#393E46',
-    '--secondary': '#00ADB5',
-    '--text': '#EEEEEE',
+    '--bg': '#181818', // takmer čierna
+    '--primary': '#00ADB5', // výrazná tyrkysová
+    '--secondary': '#393E46', // tmavá šedá
+    '--text': '#EEEEEE', // svetlý text
   },
   neutral: {
-    '--bg': '#F6F5F5',
-    '--primary': '#AEE1F9',
-    '--secondary': '#BBDED6',
-    '--text': '#232931',
+    '--bg': '#FFF8E1', // jemná krémová
+    '--primary': '#FFD600', // výrazná žltá
+    '--secondary': '#FFAB91', // pastelová oranžová
+    '--text': '#5D4037', // hnedý text
+  },
+  default: {
+    '--bg': ' #cccccc5b',
+    '--primary': '#83bdcb',
+    '--secondary': '#98afc6',
+    '--text': '#222831',
   },
 };
 
