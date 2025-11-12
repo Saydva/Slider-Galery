@@ -29,7 +29,7 @@ const themePalettes1 = {
     '--btn-color': '#210F37',
     '--btn-hover-bg': '#EDA35A',
     '--btn-hover-color': '#FEE8D9',
-    '--border': '4px dotted #EDA35A',
+    '--border': '4px solid #EDA35A',
     '--dot-bg': '#EDA35A',
     '--dot-active-bg': '#FEE8D9',
   },

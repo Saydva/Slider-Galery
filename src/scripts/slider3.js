@@ -28,7 +28,7 @@ const themePalettes3 = {
     '--btn-color': '#FFF8E6',
     '--btn-hover-bg': '#9ACBD0',
     '--btn-hover-color': '#2973B2',
-    '--border': '5px dotted #2973B2',
+    '--border': '5px solid #2973B2',
     '--dot-bg': '#9ACBD0',
     '--dot-active-bg': '#2973B2',
   },
