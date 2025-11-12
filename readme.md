@@ -87,4 +87,4 @@ Projekt je dostupný na GitHub Pages:
 
 Pre rýchly prístup k online verzii:
 
-<img alt="QR kód" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;data=https://Saydva.github.io/Slider-Galery/">
+<img alt="QR kód" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://Saydva.github.io/Slider-Galery/" />
