@@ -1,11 +1,7 @@
 // Import všetkého čo potrebuješ
-import ImageSlider from './imageSlider.js';
+import UnifiedSlider from './unifiedSlider.js';
 import { initModal } from './modal.js';
-import { galleries } from './config.js';
-import './slider1.js';
-import './slider2.js';
-import './slider3.js';
-import './slide-bar.js';
+import { galleries, sliderConfigs } from './config.js';
 
 // Inicializácia po načítaní stránky
 window.addEventListener('DOMContentLoaded', () => {
@@ -16,7 +12,11 @@ window.addEventListener('DOMContentLoaded', () => {
   Object.keys(galleries).forEach((galleryId) => {
     const container = document.querySelector(`[data-slider="${galleryId}"]`);
     if (container) {
-      new ImageSlider(container, galleries[galleryId]);
+      new UnifiedSlider(
+        container,
+        galleries[galleryId],
+        sliderConfigs[galleryId],
+      );
     }
   });
 });
