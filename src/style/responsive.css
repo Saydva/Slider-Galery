@@ -1,4 +1,4 @@
-/* @media (max-width: 2100px) {
+@media (max-width: 2100px) {
   .slide {
     width: 31%;
     margin: 0 0.35em;
@@ -123,31 +123,3 @@
     font-size: 0.75rem;
   }
 }
-
-/* modal section  */ /*
-
-@media (max-width: 500px) {
-  .modal-content {
-    padding: 1em;
-    width: 90vw;
-    max-width: 90vw;
-  }
-  #modal-img {
-    width: 98vw;
-    max-width: 98vw;
-    max-height: 98vw;
-  }
-}
-
-@media (min-width: 800px) {
-  #modal-img {
-    width: 500px;
-    max-width: 80vw;
-    max-height: 80vw;
-  }
-  .modal-content {
-    max-width: 500px;
-    width: 80vw;
-    padding: 2em;
-  }
-} */

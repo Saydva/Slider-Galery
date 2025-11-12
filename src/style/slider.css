@@ -91,7 +91,6 @@
 }
 
 .slider-wrapper {
-  /* Téma farby */
   padding: 1rem;
   background: var(--bg, #f9f9f9);
   color: var(--text, #222831);
