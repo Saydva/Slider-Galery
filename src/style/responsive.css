@@ -28,9 +28,9 @@
     padding: 1rem 0.5rem;
   }
 
-  .theme-btn {
-    padding: 0.5rem 1rem; /* Menšie paddingy pre tlačidlá */
-    font-size: 1rem; /* Menší text v tlačidlách */
+  .theme-buttons .button-theme {
+    padding: 0.3rem 0.5rem; /* Menšie paddingy pre tlačidlá */
+    font-size: 0.8rem; /* Menší text v tlačidlách */
   }
 
   /* 5. Ešte menšie snímky */
@@ -65,8 +65,7 @@
 
   .theme-buttons .theme-btn {
     /* Menšie paddingy pre theme tlačidlá */
-    padding: 0.4rem 0.4rem;
-
-    font-size: 0.8rem;
+    padding: 0.3rem 0.4rem;
+    font-size: 0.6rem;
   }
 }
