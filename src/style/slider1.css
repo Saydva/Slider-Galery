@@ -1,7 +1,7 @@
 /* Prvý slider - wrapper */
 .slider1-wrapper {
   background: var(--bg, linear-gradient(90deg, #f9f9f9 60%, #4fc3f7 100%));
-  border: var(--border, 3px solid #4fc3f7);
+  border: var(--border, 4px solid #4fc3f7);
   box-shadow: 0 4px 24px rgba(79, 195, 247, 0.15);
   transition: background 0.3s, color 0.3s, border 0.3s;
 }
@@ -10,7 +10,7 @@
 .slider1-main-container {
   background: var(--bg, linear-gradient(90deg, #f9f9f9 60%, #4fc3f7 100%));
   color: var(--text, #222831);
-  border: var(--border, 3px solid #4fc3f7);
+  border: var(--border, 4px solid #4fc3f7);
   border-radius: 25px;
   transition: background 0.3s, color 0.3s, border 0.3s;
 }

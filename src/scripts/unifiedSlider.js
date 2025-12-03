@@ -13,6 +13,7 @@ export default class UnifiedSlider {
   }
 
   init() {
+    this.preloadImages();
     this.createImgContainer();
     if (this.options.type === 'single') {
       this.createSlideBar();
@@ -21,6 +22,13 @@ export default class UnifiedSlider {
     this.createThemeButtons();
     this.addEventListeners();
     this.updateSlides();
+  }
+
+  preloadImages() {
+    this.images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
   }
 
   createImgContainer() {
