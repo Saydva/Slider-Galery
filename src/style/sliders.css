@@ -1,0 +1,232 @@
+/* Spojené štýly pre všetky slidery */
+
+/* Prvý slider - wrapper */
+.slider1-wrapper {
+  background: var(--bg, linear-gradient(90deg, #f9f9f9 60%, #4fc3f7 100%));
+  border: var(--border, 4px solid #4fc3f7);
+  box-shadow: 0 4px 24px rgba(79, 195, 247, 0.15);
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+/* Prvý slider - hlavný kontajner */
+.slider1-main-container {
+  background: var(--bg, linear-gradient(90deg, #f9f9f9 60%, #4fc3f7 100%));
+  color: var(--text, #222831);
+  border: var(--border, 4px solid #4fc3f7);
+  border-radius: 25px;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+/* Prvý slider - tlačidlá */
+.slider1-button,
+.slider1-theme-buttons .theme-btn {
+  background: var(--btn-bg, #4fc3f7);
+  color: var(--btn-color, #fff);
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(79, 195, 247, 0.2);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  font-size: 0.8rem;
+}
+
+.slider1-button {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.3rem;
+  padding: 0;
+}
+
+.slider1-button:hover {
+  background: var(--btn-hover-bg, #ffb6b9);
+  color: var(--btn-hover-color, #222831);
+  transform: scale(1.15);
+}
+
+.slider1-theme-buttons .theme-btn {
+  padding: 0.5rem 1rem;
+  margin: 0 0.2rem;
+}
+
+.slider1-theme-buttons .theme-btn:hover {
+  background: var(--btn-hover-bg, #ffb6b9);
+  color: var(--btn-hover-color, #222831);
+  transform: scale(1.1);
+}
+
+/* Prvý slider - animácia obrázkov */
+.slider1-img-container .slide {
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), transform 0.5s;
+}
+
+.slider1-img-container .slide.fade-in {
+  opacity: 0;
+  transform: scale(0.95);
+  animation: slider1FadeIn 0.7s forwards;
+}
+
+@keyframes slider1FadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Druhý slider - wrapper */
+.slider2-wrapper {
+  background: var(--bg, linear-gradient(135deg, #fce38a 60%, #f38181 100%));
+  color: var(--text, #222831);
+  border: var(--border, 4px solid #f38181);
+  border-radius: 40px;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  box-shadow: 0 8px 40px rgba(243, 129, 129, 0.18);
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+/* Druhý slider - hlavný kontajner */
+.slider2-main-container {
+  background: var(--bg, #b2bec3);
+  color: var(--text, #222831);
+  border: var(--border, 4px solid #f38181);
+  border-radius: 30px;
+  padding: 1.5rem;
+  margin: 0.7rem 0;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+/* Druhý slider - tlačidlá */
+.slider2-button,
+.slider2-theme-buttons .theme-btn {
+  background: var(--btn-bg, #b2bec3);
+  color: var(--btn-color, #222831);
+  border-radius: 50px 10px 50px 10px;
+  border: 2px solid var(--secondary, #eaffd0);
+  font-weight: bold;
+  font-size: 0.8rem;
+  box-shadow: 0 4px 16px rgba(243, 129, 129, 0.18);
+  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s,
+    box-shadow 0.2s;
+  outline: none;
+  letter-spacing: 1px;
+  margin: 0.4rem;
+  padding: 0.5rem;
+}
+
+.slider2-button {
+  background-color: var(--btn-bg, #f38181);
+  color: var(--btn-color, #fff);
+  border-radius: 50px;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+.slider2-theme-buttons .theme-btn {
+  background-color: var(--btn-bg, #f38181);
+  color: var(--btn-color, #fff);
+  border-radius: 20px;
+  padding: 0.4rem 1.2rem;
+}
+
+.slider2-button:hover,
+.slider2-theme-buttons .theme-btn:hover {
+  background: var(--btn-hover-bg, #dfe6e9);
+  color: var(--btn-hover-color, #222831);
+  border-color: var(--primary, #b2bec3);
+  transform: scale(1.18) rotate(-3deg);
+  box-shadow: 0 8px 24px rgba(243, 129, 129, 0.25);
+}
+
+/* Druhý slider - obrázky */
+.slider2-img-container .slide {
+  border-radius: 24px;
+  margin: 0 0.35em;
+  box-shadow: 0 2px 12px rgba(243, 129, 129, 0.12);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Animácia obrázkov */
+.slider2-img-container .slide.fade-in {
+  opacity: 0;
+  transform: scale(0.93);
+  animation: slider2FadeIn 0.7s forwards;
+}
+
+@keyframes slider2FadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Tretí slider - wrapper */
+.slider3-wrapper {
+  background: var(--bg, linear-gradient(120deg, #ffecd2 0%, #fcb69f 100%));
+  color: var(--text, #3e2723);
+  border: var(--border, 5px solid #fcb69f);
+  border-radius: 60px 10px 60px 10px;
+  margin-bottom: 2.5rem;
+  padding: 0.5rem;
+  box-shadow: 0 10px 48px rgba(252, 182, 159, 0.18);
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+/* Tretí slider - hlavný kontajner */
+.slider3-main-container {
+  background: var(--bg, #ffecd2);
+  color: var(--text, #3e2723);
+  border: var(--border, 5px solid #fcb69f);
+  border-radius: 40px 8px 40px 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+/* Tretí slider - tlačidlá */
+.slider3-button,
+.slider3-theme-buttons .theme-btn {
+  background: var(--btn-bg, #8ec5fc);
+  color: var(--btn-color, #3e2723);
+  border-radius: 60px 10px 60px 10px;
+  border: 3px double var(--secondary, #ffecd2);
+  font-weight: 700;
+  font-size: 0.8rem;
+  box-shadow: 0 6px 20px rgba(252, 182, 159, 0.18);
+  margin: 0.5rem;
+  padding: 0.5rem 0.7rem;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.slider3-button:hover,
+.slider3-theme-buttons .theme-btn:hover {
+  background: var(--btn-hover-bg, #ffecd2);
+  color: var(--btn-hover-color, #fcb69f);
+  border-color: var(--primary, #fcb69f);
+  transform: scale(1.22) rotate(4deg);
+  box-shadow: 0 8px 24px rgba(252, 182, 159, 0.25);
+}
+
+/* Tretí slider - obrázky */
+.slider3-img-container .slide {
+  border-radius: 32px 8px 32px 8px;
+  margin: 0 0.45em;
+  box-shadow: 0 4px 16px rgba(252, 182, 159, 0.14);
+  transition: opacity 0.6s, transform 0.6s;
+}
+
+/* Animácia obrázkov */
+.slider3-img-container .slide.fade-in {
+  opacity: 0;
+  transform: scale(0.89);
+  animation: slider3FadeIn 0.8s forwards;
+}
+
+@keyframes slider3FadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

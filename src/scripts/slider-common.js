@@ -30,30 +30,3 @@ export function applyPaletteToSlider(slider, palette) {
     slider.style.setProperty(key, value);
   });
 }
-
-export function fillSliderImagesFromGallery(
-  slider,
-  galleryName,
-  galleries,
-  containerSelector = '.img-container',
-) {
-  const images = galleries[galleryName]; // Získa obrázky z galérie
-  const container = slider.querySelector(containerSelector); // Nájde kontajner pre obrázky
-  if (!container || !images) return; // Ak kontajner alebo obrázky neexistujú, ukonči funkciu
-
-  container.innerHTML = ''; // Vyčisti kontajner
-
-  images.forEach((src, idx) => {
-    const item = document.createElement('div');
-    item.className = 'slide-item';
-    if (idx === 0) item.setAttribute('data-carousel-item', 'active');
-
-    const img = document.createElement('img');
-    img.src = src;
-    img.alt = '';
-    img.className = 'slide-image';
-
-    item.appendChild(img);
-    container.appendChild(item);
-  });
-}
